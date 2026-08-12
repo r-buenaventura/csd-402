@@ -212,6 +212,17 @@ tempCodeRunnerFile.py
 # Marimo
 marimo/_static/
 marimo/_lsp/
+
+# macOS files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Microsoft Word temporary files
+~$*.doc
+~$*.docx
+*.tmp
 __marimo__/
 
 # Streamlit
