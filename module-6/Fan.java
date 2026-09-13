@@ -15,35 +15,35 @@ public class Fan {
     private String color = "white";
     // create getters and setters for all four fields.
     public int getSpeed() {
-    return speed;
+    return this.speed;
    }
     public void setSpeed(int speed) {
         this.speed = speed;
     }
     public boolean isOn() {
-        return on;
+        return this.on;
     }
     public void setOn(boolean on) {
         this.on = on;
     }
     public double getRadius() {
-        return radius;
+        return this.radius;
     }
     public void setRadius(double radius) {
         this.radius = radius;
     }
     public String getColor() {
-        return color;
+        return this.color;
     }
     public void setColor(String color) {
         this.color = color;
     }
     // create a no-arg constructor that sets all fields to a default value.
     public Fan() {
-        speed = STOPPED;
-        on = false;
-        radius = 6;
-        color = "white";
+        this.speed = STOPPED;
+        this.on = false;
+        this.radius = 6;
+        this.color = "white";
     }
     // create a constructor that takes arguments and sets values.
     public Fan(int speed, boolean on, double radius, String color) {
@@ -58,20 +58,20 @@ public class Fan {
         // create a variable to hold the name of the speed
         String speedName = "Stopped";
         // use if statements to determine the name of the speed based on the value of the speed field
-        if (speed == STOPPED) {
+        if (this.speed == STOPPED) {
             speedName = "STOPPED";
-        } else if (speed == SLOW) {
+        } else if (this.speed == SLOW) {
             speedName = "SLOW";
-        } else if (speed == MEDIUM) {
+        } else if (this.speed == MEDIUM) {
             speedName = "MEDIUM";
-        } else if (speed == FAST) {
+        } else if (this.speed == FAST) {
             speedName = "FAST";
         }
 
         return "Fan speed: " + speedName +
-                "\nFan on: " + on +
-                "\nFan radius: " + radius +
-                "\nFan color: " + color;
+                "\nFan on: " + this.on +
+                "\nFan radius: " + this.radius +
+                "\nFan color: " + this.color;
         }
     }
 
