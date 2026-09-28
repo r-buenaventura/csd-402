@@ -1,3 +1,8 @@
+// Roxanne Buenaventura
+// CSD 402
+// Module 9.2 Assignment
+// 27 September 2026
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
